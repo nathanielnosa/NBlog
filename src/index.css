@@ -19,6 +19,10 @@
   width: 90%;
   margin: 0 auto;
 }
+.card{
+  border-radius: .5rem;
+  box-shadow: .1rem 0rem .4rem var(--light-black);
+}
 
 /* navbar */
 /* navbar */
@@ -91,4 +95,38 @@
   border-radius: .5rem;
   color: var(--white);
   margin: .5rem 0;
+}
+
+/* blog list */
+/* blog list */
+#blog-list{
+  padding:1rem 0;
+}
+#blog-list h3{
+  font-size: 2rem;
+  text-align: center;
+  margin: .6rem 0;
+  color: var(--second-color);
+}
+#blog-list .container{
+  display: flex;
+}
+
+#blog-list .blog-content{
+  flex-grow: 2;
+}
+
+#blog-list .blog-content .card{
+  padding: .6rem;
+  margin-bottom: .9rem;
+  height: 30vh;
+}
+
+#blog-list .blog-content .card h4{
+  font-size: 1.6rem;
+  color: var(--second-color);
+}
+
+#blog-list .recent-content{
+  flex-grow: 1;
 }
