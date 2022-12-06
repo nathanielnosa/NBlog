@@ -1,13 +1,94 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+ 
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+  /* transition: all .3s ease-in-out; */
+}
+:root{
+  --main-color: #2ac36c;
+  --second-color: #740b0b;
+  --white: #fff;
+  --black: #000;
+  --light-black: #383838;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* navbar */
+/* navbar */
+.navbar{
+  background: var(--main-color);
+  height: 6.5vh;
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--second-color);
+}
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container .brand{
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.navbar .container .brand>span{
+  color: var(--second-color);
+  outline: var(--white);
+  -webkit-text-stroke: 1px var(--white);
+  font-size: 2.5rem;
+}
+.navbar .container li{
+  display: inline;
+}
+.navbar .container li a{
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 1rem .8rem;
+  transition: all .6s ease-in-out;
+}
+.navbar .container li a:hover{
+  background: var(--second-color);
+}
+
+/* home */
+/* home */
+#home{
+  height: 90vh;
+  text-align: center;
+  background: var(--light-black);
+  color: var(--white);
+}
+#home .container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+#home h1{
+  font-size: 5rem;
+}
+#home p{
+  width: 50%;
+  margin: .6rem auto;
+}
+
+#home button{
+  background: var(--second-color);
+  padding: .7rem 1.5rem;
+  border: 0;
+  border-radius: .5rem;
+  color: var(--white);
+  margin: .5rem 0;
 }
