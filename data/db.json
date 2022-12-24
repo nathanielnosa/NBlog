@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Learn HTML",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores sit distinctio quis numquam voluptatum mollitia vero modi quaerat natus reprehenderit similique necessitatibus minus facere laboriosam, voluptatibus blanditiis ipsam ex.",
+      "author": "Nathaniel"
+    },
+    {
+      "id": 2,
+      "title": "Learn CSS",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores sit distinctio quis numquam voluptatum mollitia vero modi quaerat natus reprehenderit similique necessitatibus minus facere laboriosam, voluptatibus blanditiis ipsam ex.",
+      "author": "Nosa"
+    },
+    {
+      "id": 3,
+      "title": "Learn Bootstrap",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores sit distinctio quis numquam voluptatum mollitia vero modi quaerat natus reprehenderit similique necessitatibus minus facere laboriosam, voluptatibus blanditiis ipsam ex.",
+      "author": "Ncode"
+    },
+    {
+      "id": 4,
+      "title": "Learn Backend",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores sit distinctio quis numquam voluptatum mollitia vero modi quaerat natus reprehenderit similique necessitatibus minus facere laboriosam, voluptatibus blanditiis ipsam ex.",
+      "author": "Unknown"
+    },
+    {
+      "title": "Learn React and Nextjs",
+      "body": "React and Next Js are just so so cool",
+      "author": "Nosa",
+      "id": 5
+    }
+  ]
+}

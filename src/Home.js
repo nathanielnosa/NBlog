@@ -1,32 +1,12 @@
-import { useState } from "react";
+import BlogList from "./Bloglist";
+import useFetch from "./useFetch";
 
 const Home = () => {
-const [blogs,setBlog]=useState([
-    {
-        id:1,
-        title:'Blog Post One',
-        author: 'Nathaniel',
-        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, atque!',
-
-    },
-    {
-        id:2,
-        title:'Blog Post Two',
-        author: 'Nosa',
-        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, atque!',
-
-    },
-    {
-        id:3,
-        title:'Blog Post One',
-        author: 'Ncode',
-        body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, atque!',
-
-    },
-]);
+    
+    const {data:blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
 
     return ( 
-            [
+            [ 
                 <section id="home" className="home">
                 <div className="container">
                     <h1>WELCOME TO NBlog</h1>
@@ -38,21 +18,14 @@ const [blogs,setBlog]=useState([
             <section id="blog-list" className="blog-list">
                     <h3>Blog Posts</h3>
                 <div className="container">
-                    <div className="blog-content">
-                        {
-                    
-                            blogs.map((blog)=>(
-                                <div className="card" key={blog.id}>
-                                    <h4>{blog.title}</h4>
-                                    <p>By: {blog.author}</p>
-                                    <p>{blog.body}</p>
-                                </div>
-                            ))
-                        }
-                    </div>
-
+                    {isLoading && <div>Loading...</div>}
+                    { error && <div>{error} </div> }
+                { blogs && <BlogList blogs={blogs} title='All Posts' /> }
+ 
                     <div className="recent-content">
-                        <div className="card"></div>
+                        <div className="card">
+                            
+                        </div>
                     </div>
                 </div>
             </section>

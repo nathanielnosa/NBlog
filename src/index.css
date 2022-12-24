@@ -53,14 +53,14 @@
 .navbar .container li{
   display: inline;
 }
-.navbar .container li a{
+.navbar .container li .a{
   color: var(--white);
   font-weight: 500;
   font-size: 1.3rem;
   padding: 1rem .8rem;
   transition: all .6s ease-in-out;
 }
-.navbar .container li a:hover{
+.navbar .container li .a:hover{
   background: var(--second-color);
 }
 
@@ -126,7 +126,35 @@
   font-size: 1.6rem;
   color: var(--second-color);
 }
+#blog-list .blog-content .card button{
+  background: var(--second-color);
+  border: none;
+  color: var(--white);
+  padding: .8rem 1.8rem;
+  margin: .7rem 0;
+  border-radius: .5rem;
+  cursor: pointer;
+}
 
 #blog-list .recent-content{
   flex-grow: 1;
+}
+
+.form-group{
+  margin: .6rem 0;
+}
+.form-group label{
+  display: block;
+}
+.form-group input, textarea, select{
+  width: 60%;
+  height: 5vh;
+  border-radius: .3rem;
+}
+button{
+  padding: .7rem 1.8rem;
+  background-color: #2ac36c;
+  outline: none;
+  border: none;
+  border-radius: .3rem;
 }
